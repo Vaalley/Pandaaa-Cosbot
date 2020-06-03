@@ -1,0 +1,18 @@
+{
+  "name": "Cosbot",
+  "version": "2.0.0",
+  "description": "The (official) Trap Cosmos Discord Bot",
+  "framework": "Discord.js Plugin loading Bot Framework",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "author": "Pandaaa",
+  "framework_author": "Blazzike",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "fs": "0.0.1-security",
+    "request": "^2.88.2"
+  }
+}
