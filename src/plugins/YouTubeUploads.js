@@ -65,12 +65,14 @@ module.exports = {
 
                 thumbnail(video.id.videoId, function(thumbnailUrl) {
 
+                    
+
                     let newVidEmbed = new Discord.RichEmbed()
                         .setColor(0xBC1515)
                         .setThumbnail(`https://cdn.discordapp.com/attachments/572464268839092224/674602378649010196/TrapCosmos_medium.jpg`)
                         .setImage(thumbnailUrl)
                         .setAuthor(`Trap Cosmos`, '', 'https://www.youtube.com/channel/UCGPLYAkTyKtG5zEmgL8aN7Q')
-                        .setTitle(`${video.snippet.title}`)
+                        .setTitle(`${video.snippet.title}`.replace(/&amp;/g, '&'))
                         .addField(`:arrow_forward: https://youtu.be/${video.id.videoId}`, `** **`)
                         .setFooter(`Uploaded: ${timestamp(video.snippet.publishedAt)}`);
 
