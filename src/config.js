@@ -14,7 +14,7 @@ module.exports = {
         'consoleCommands/PluginsConsoleCommand',
         'consoleCommands/SayConsoleCommand',
         'consoleCommands/ReloadConsoleCommand',
-        'jake'
+        'jake',
         // Own
         'YouTubeUploads',
     ]
